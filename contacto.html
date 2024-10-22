@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fútbol Fanático</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fútbol Fanático</h1>
+        <p>Todo sobre el fútbol, los equipos y jugadores favoritos</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="jugadores.html">Jugadores</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta, comentario o sugerencia, no dudes en ponerte en contacto con nosotros a través del siguiente formulario. Estaremos encantados de ayudarte.</p>
+        </section>
+
+        <section>
+            <h3>Formulario de Contacto</h3>
+            <form action="enviar.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Información de Contacto</h3>
+            <ul>
+                <li><strong>Teléfono:</strong> +34 123 456 789</li>
+                <li><strong>Correo Electrónico:</strong> contacto@futbolfanatico.com</li>
+                <li><strong>Dirección:</strong> Calle Fútbol 123, Madrid, España</li>
+                <li><strong>Horarios de Atención:</strong> Lunes a Viernes, de 9:00 AM a 6:00 PM</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Encuéntranos en el Mapa</h3>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.7680544091997!2d2.1625538152654394!3d41.38152257926361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f72bcb604b%3A0x0!2sCamp%20Nou!5e0!3m2!1ses!2ses!4v1620820989474!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fútbol Fanático. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
